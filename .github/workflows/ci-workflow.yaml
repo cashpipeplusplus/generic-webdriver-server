@@ -1,4 +1,4 @@
-name: Build
+name: CI
 # This workflow is triggered on pushes to the repository's main branch.
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build and Lint
     runs-on: ubuntu-latest
 
     steps:

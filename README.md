@@ -1,6 +1,6 @@
 # Generic WebDriver Server
 
-[![Build](https://github.com/cashpipeplusplus/generic-webdriver-server/workflows/Build/badge.svg)](https://github.com/cashpipeplusplus/generic-webdriver-server/actions?query=workflow%3ABuild)
+[![Build and Lint](https://github.com/cashpipeplusplus/generic-webdriver-server/workflows/Build%20and%20Lint/badge.svg)](https://github.com/cashpipeplusplus/generic-webdriver-server/actions?query=workflow%3ABuild%20and%20Lint)
 
 A generic [WebDriver][] server framework and base class, implementing the subset
 of the WebDriver protocol necessary for [Karma][].
