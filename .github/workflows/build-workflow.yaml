@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Install Deps
+        run: npm ci
       - name: Lint JavaScript
         run: npm run lint
       - name: Build Selenium DriverProvider JAR
