@@ -99,7 +99,7 @@ class Success extends GenericWebDriverResponse {
  */
 class SessionNotCreatedError extends GenericWebDriverResponse {
   constructor() {
-    super({error: 'session not created'});
+    super({error: 'session not created'}, 500);
   }
 }
 
@@ -107,7 +107,7 @@ class SessionNotCreatedError extends GenericWebDriverResponse {
  * An "unknown command" error as defined by the spec.
  * https://www.w3.org/TR/webdriver2/#dfn-unknown-command
  */
-class UnknownCommandError extends GenericWebDriverResponser {
+class UnknownCommandError extends GenericWebDriverResponse {
   constructor() {
     super({error: 'unknown command'}, 404);
   }
