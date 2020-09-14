@@ -75,7 +75,7 @@ class GenericWebDriverResponse {
     /** @type {?} */
     this.value = value;
     /** @type {number} */
-    this.httpStatusCode = httpStatusCode.toString();
+    this.httpStatusCode = httpStatusCode;
   }
 }
 
