@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: Lint JavaScript
         run: npm run lint
       - name: Build Selenium DriverProvider JAR
