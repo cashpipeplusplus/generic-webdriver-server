@@ -1,0 +1,19 @@
+name: Build
+# This workflow is triggered on pushes to the repository's main branch.
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Lint JavaScript
+        run: npm run lint
+      - name: Build Selenium DriverProvider JAR
+        run: npm run jar
